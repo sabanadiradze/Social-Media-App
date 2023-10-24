@@ -30,7 +30,7 @@ const UserSchema = new mongoose.Schema(
 
         },
         friends: {
-            type:Array,
+            type: Array,
             default: []
         },
         location: String,
@@ -38,7 +38,7 @@ const UserSchema = new mongoose.Schema(
         viewedProfile: Number,
         impressions: Number,
 
-}, {timestamps:true});
+    }, { timestamps: true });
 
 const User = mongoose.model("User", UserSchema);
 export default User;
